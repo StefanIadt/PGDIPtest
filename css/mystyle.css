@@ -1,0 +1,268 @@
+.red {
+    background-color: red;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bgimage{
+    background-image: url(../images/bodybg.jpg);
+    background-size: cover;
+}
+
+.h5 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+    /*display: inline-block;*/
+    padding-bottom: 5px;
+    margin: 0px 0px 30px 0px;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.spacer {
+    margin: 50px 0 100px 0;
+}
+
+.mybutton {
+    width: 150px;
+    border: 2px solid #000000;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight:700;
+    font-size: 36px;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px 30px 20px 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.formpad {
+    margin-top: 120px;
+}
+
+.mybutton:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mybutton a:visited {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.left {
+    margin-left: 28px;
+}
+
+
+a.reveal {
+    line-height: 1em;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 300px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    letter-spacing:-50px;
+    background-size: 200% auto;
+    -webkit-background-size: 200% auto;
+    -moz-background-size: 200% auto;
+    background-position: -0% 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #fa9292 50%);
+    transition: background-position 0.5s ease-out;
+    -webkit-transition: background-position 0.5s ease-out;
+}
+
+a.reveal:hover {
+    background-position: -100% 0;
+}
+
+/*/////////////////////////////BGgrid//////////////////////////////*/
+
+
+.grid-line {
+    position: fixed;
+    height: 200vh;
+    border-left: 1px solid #ccc;
+    margin-top: -100px;
+}
+
+/*/////////////////////////////Parallax//////////////////////////////*/
+.steffo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 200px;
+    z-index: 1000;
+    letter-spacing: -20px;
+}
+
+.dubs {
+
+    color: #ded9d6;
+    opacity: .4;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+}
+
+.zztop {
+    z-index: 1000;
+}
+
+.ztop {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 200px;
+    z-index: 100;
+}
+
+.zmiddle {
+    z-index: 500;
+}
+
+.white {
+    color: white;
+}
+
+.letter-1 {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+}
+
+.letter-2 {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.letter-3 {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+.letter-4 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
+.letter-5 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+.letter-6 {
+    position: absolute;
+    top: 130%;
+    left: 20%;
+}
+
+/*https://cssgradient.io/gradient-backgrounds/*/
+
+.box1 {
+    background-color: #8EC5FC;
+    background-image: -webkit-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 39%, #ffffff 100%);
+    background-image: -moz-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 39%, #ffffff 100%);
+    background-image: -o-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 39%, #ffffff 100%);
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 39%, #ffffff 100%);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.box2 {
+    width: 60px;
+    height: 60px;
+    background: #00F1C9;
+    border-radius: 12px;
+    position: absolute;
+    top: 190%;
+    left: 20%;
+}
+
+.box3 {
+    width: 120px;
+    height: 120px;
+    background: #5000F1;
+    border-radius: 12px;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+}
+
+.box4 {
+    width: 160px;
+    height: 160px;
+    background: #00F1C9;
+    border-radius: 12px;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+}
+
+.box5 {
+    width: 80px;
+    height: 80px;
+    background: #5000F1;
+    border-radius: 12px;
+    position: absolute;
+    top: 250%;
+    left: 40%;
+}
+
+/*/////////////////////////////FADE//////////////////////////////*/
+
+.hideme.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.hideme {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 1s, transform 1s;
+
+    /*/////////////////////////////Media Query <1200//////////////////////////////*/
+
+
+    @media only screen and (max-width: 600px) {
+
+
+        .bgimage {
+            background-image: url(../images/smallbodybg.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .h5 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 24px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin: 0px 0px 30px 0px;
+        }
+    }
